@@ -571,8 +571,8 @@ h4,
 	height: 36px;
 	text-align: center;
 	cursor: pointer;
-	border-radius: 50%;
-	border: 1px solid #000000;
+	/* border-radius: 50%; */
+	/* border: 1px solid #000000; */
 }
 .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
 	font-size: 14px;
@@ -2147,7 +2147,7 @@ h4,
 	transform: translate(-50%, -50%);
 }
 .site-footer .widget .social li a:hover {
-	color: #000;
+	color: hotpink;
 }
 .site-footer .widget .links li {
 	display: block;
