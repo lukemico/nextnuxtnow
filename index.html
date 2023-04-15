@@ -51,8 +51,8 @@
 		<nav class="site-nav">
 			<div class="container">
 				<div class="site-navigation">
-					<h1 class="elegantshadow">
-						<a href="#home" class="logo float-left m-0"
+					<h1 id="home" class="elegantshadow">
+						<a href="" class="logo float-left m-0"
 							>LUKE MICO <span class="text-primary"></span
 						></a>
 					</h1>
@@ -60,62 +60,70 @@
 					<ul
 						class="js-clone-nav d-none d-lg-inline-noone text-left site-menu"
 					>
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="#home">Home</a></li>
 						<li class="has-children">
-							<a href="#">About</a>
+							<a href="#about">About</a>
 							<ul class="dropdown">
 								<li>
-									<a href="portfolio.html">Work Experience</a>
+									<a href="#workexperience"
+										>Work Experience</a
+									>
 								</li>
-								<li><a href="blog.html">Social</a></li>
-								<li><a href="single.html">Get In Touch</a></li>
+								<li><a href="#social">Social</a></li>
+								<li><a href="#social">Get In Touch</a></li>
 							</ul>
 						</li>
 						<li class="has-children">
-							<a href="#">Portfolio</a>
+							<a href="#portfolio">Portfolio</a>
 							<ul class="dropdown">
 								<li>
 									<a href="#portfolio"
 										>Software Development</a
 									>
 								</li>
-								<li><a href="blog.html">Github repo</a></li>
+								<li>
+									<a href="https://github.com/lukemico"
+										>Github repository</a
+									>
+								</li>
 								<li>
 									<a
 										href="https://www.thoughtworks.com/en-au/about-us/events/level-up/sydney#LevelUp_Now"
-										>Thoughtworks - LevelUp program</a
+										>Thoughtworks | LevelUp</a
 									>
 								</li>
-								<li><a href="about.html">Shocase</a></li>
+								<li>
+									<a href="https://dribbble.com/luke_mico"
+										>Dribbble</a
+									>
+								</li>
 							</ul>
 						</li>
 						<li class="has-children">
-							<a href="#">Skills</a>
+							<a href="#skills">Skills</a>
 							<ul class="dropdown">
 								<li>
-									<a href="portfolio.html"
-										>Skills & Technologies</a
-									>
-								</li>
-								<li>
-									<a href="https://week01day01.tumblr.com/"
-										>Blog</a
-									>
+									<a href="#skills">Skills & Technologies</a>
 								</li>
 							</ul>
 						</li>
 						<li class="has-children">
 							<a href="#blog">Blog</a>
 							<ul class="dropdown">
-								<li><a href="portfolio.html">Portfolio</a></li>
 								<li>
 									<a href="https://week01day01.tumblr.com/"
-										>Blog</a
+										>Week1Day1 - General Assembly</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://www.thoughtworks.com/en-au/about-us/events/level-up/sydney#LevelUp_Now"
+										>Thoughtworks</a
 									>
 								</li>
 							</ul>
 						</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 
 					<a
@@ -130,7 +138,7 @@
 			</div>
 		</nav>
 
-		<div class="custom-hero">
+		<div id="about" class="custom-hero">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-4">
@@ -172,10 +180,10 @@
 		<div id="portfolio" class="section-4">
 			<div class="container">
 				<div class="row mb-4 align-items-center">
-					<div class="col-6">
+					<div class="col-7">
 						<h2 class="line-top">Recent Work</h2>
 					</div>
-					<div class="col-6 text-right">
+					<div class="col-5 text-right">
 						<a href="#" class="custom-prev-v2 js-custom-prev-v2"
 							>Prev</a
 						>
@@ -197,7 +205,7 @@
 								/>
 							</a>
 							<div class="text-center text-md-left">
-								<h3>Woman Floral Dress</h3>
+								<h3>API Mania</h3>
 								<p>
 									Far far away, behind the word mountains, far
 									from the countries.
@@ -233,7 +241,7 @@
 								/>
 							</a>
 							<div class="text-center text-md-left">
-								<h3>Donut Project | Order Your Own Donut's</h3>
+								<h3>Donut-O-Rama</h3>
 								<p>
 									A ReactJS Web App that manages State + Props
 									to place an order for donuts, calculate
@@ -270,9 +278,7 @@
 								/>
 							</a>
 							<div class="text-center text-md-left">
-								<h3>
-									The Disappearing Act | Sydney Opera House
-								</h3>
+								<h3>The Disappearing Act</h3>
 								<p>
 									An interactive Escape Room challenge built
 									with Shorthand, a visual storytelling
@@ -336,8 +342,24 @@
 			</div>
 		</div>
 
-		<div class="section">
+		<div id="workexperience" class="section">
 			<div class="container">
+				<div class="row mb-4 align-items-center">
+					<div class="col-10">
+						<h2 class="line-top">Work Experience</h2>
+					</div>
+					<!-- <div class="col-6 text-right">
+						<a
+							href="#"
+							class="custom-prev-v2 js-custom-prev-v2"
+						></a>
+						<span class="mx-3">/</span>
+						<a
+							href="#"
+							class="custom-next-v2 js-custom-next-v2"
+						></a>
+					</div> -->
+				</div>
 				<div class="row">
 					<div
 						class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0"
@@ -351,14 +373,22 @@
 								></i>
 							</div>
 							<div class="text">
-								<h3>Hey, I'm Luke</h3>
+								<h3>Sydney Opera House</h3>
 								<p>
-									I'm passionate about all things tech, from
-									the functional, technical and creative, I
-									made the choice to transition into software
-									engineering as I like to build things that
-									have a purpose and solve challenges, of
-									which coding pushes me to do exactly that.
+									Working as part of a team, my role is
+									focused on front end development for the
+									Sydney Opera House, a World Heritage-listed
+									masterpiece of ‘human creative genius’ that
+									belongs to all Australians. It is the
+									Country’s number one tourist destination and
+									its busiest performing arts centre,
+									welcoming more than 10.9 million visitors a
+									year on site and hosting more than 1,800
+									performances attended by more than 1.4
+									million people. Deloitte has estimated the
+									total cultural and iconic value of the
+									Sydney Opera House to Australia at $6.2
+									billion.
 								</p>
 								<p class="more"><a href="#">Read more...</a></p>
 							</div>
@@ -377,12 +407,19 @@
 								></i>
 							</div>
 							<div class="text">
-								<h3>Less is more</h3>
+								<h3>MullenLowe Profero</h3>
 								<p>
-									Even the all-powerful Pointing has no
-									control about the blind texts it is an
-									almost unorthographic life One day however a
-									small line of blind text
+									Working within a globally networked, full
+									service digital agency, my role is part of a
+									front end development team that builds,
+									maintain and support ongoing projects
+									specifically looking after the websites of
+									one of the world’s largest brands. This
+									includes working with version control tools
+									on a day-to-day basis as well as working
+									closely with lead developers on issue
+									resolution, cross browser compatibility and
+									accessibility.
 								</p>
 								<p class="more"><a href="#">Read more...</a></p>
 							</div>
@@ -401,7 +438,62 @@
 								></i>
 							</div>
 							<div class="text">
-								<h3>Whitespaces</h3>
+								<h3>General Assembly</h3>
+								<p>
+									In an immersive environment, I learnt
+									JavaScript, Ruby, HTML5 and CSS3 languages,
+									frameworks Rails and React as well as
+									functional object oriented programming
+									concepts. I worked on both individual and
+									group projects to deliver a range of web
+									applications based on my learnings.
+								</p>
+								<p class="more"><a href="#">Read more...</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
+						<div class="feature-v3 d-block">
+							<div class="wrap-icon">
+								<i
+									class="flaticon-copy-two-paper-sheets-interface-symbol"
+								></i>
+							</div>
+							<div class="text">
+								<h3>David Jones Limited</h3>
+								<p>
+									I managed integrated marketing campaigns for
+									this prestigious multi-channel retailer
+									including digital, social, e-commerce,
+									catalogue and print across fashion, home and
+									beauty, supporting commercial initiatives.
+									This included using SalesForce for campaign
+									management, Basecamp for project management
+									and HootSuite for social media.
+								</p>
+								<p class="more"><a href="#">Read more...</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
+						<div class="feature-v3 d-block">
+							<div class="wrap-icon">
+								<i
+									class="flaticon-copy-two-paper-sheets-interface-symbol"
+								></i>
+							</div>
+							<div class="text">
+								<h3>Five Whitespaces</h3>
 								<p>
 									Even the all-powerful Pointing has no
 									control about the blind texts it is an
@@ -506,7 +598,86 @@
 			</div>
 		</div>
 
-		<div class="site-footer">
+		<div id="skills" class="section">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0"
+						data-aos="fade-up"
+						data-aos-delay="0"
+					>
+						<div class="feature-v3 d-block">
+							<div class="wrap-icon">
+								<i
+									class="flaticon-chat-comment-oval-speech-bubble-with-text-lines"
+								></i>
+							</div>
+							<div class="text">
+								<h3>Technology</h3>
+								<p>
+									I'm passionate about all things tech, from
+									the functional, technical and creative, I
+									made the choice to transition into software
+									engineering as I like to build things that
+									have a purpose and solve challenges, of
+									which coding pushes me to do exactly that.
+								</p>
+								<p class="more"><a href="#">Read more...</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
+						<div class="feature-v3 d-block">
+							<div class="wrap-icon">
+								<i
+									class="flaticon-weekly-calendar-outline-event-interface-symbol"
+								></i>
+							</div>
+							<div class="text">
+								<h3>Javascript</h3>
+								<p>
+									Even the all-powerful Pointing has no
+									control about the blind texts it is an
+									almost unorthographic life One day however a
+									small line of blind text
+								</p>
+								<p class="more"><a href="#">Read more...</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
+						<div class="feature-v3 d-block">
+							<div class="wrap-icon">
+								<i
+									class="flaticon-copy-two-paper-sheets-interface-symbol"
+								></i>
+							</div>
+							<div class="text">
+								<h3>React</h3>
+								<p>
+									Even the all-powerful Pointing has no
+									control about the blind texts it is an
+									almost unorthographic life One day however a
+									small line of blind text
+								</p>
+								<p class="more"><a href="#">Read more...</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contact" class="site-footer">
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-lg-4">
@@ -518,26 +689,28 @@
 								feel free to reach out.
 							</p>
 						</div>
-						<div class="widget">
+						<div id="social" class="widget">
 							<h3>Connect with me</h3>
 							<ul class="social list-unstyled">
 								<li>
-									<a href="#"
+									<a href="https://github.com/lukemico"
 										><span class="icon-github"></span
 									></a>
 								</li>
 								<li>
-									<a href="#"
+									<a
+										href="mailto:lukemico@me.com?subject=Hey, Hi, Hello"
 										><span class="icon-mail_outline"></span
 									></a>
 								</li>
 								<li>
-									<a href="#"
+									<a
+										href="https://www.linkedin.com/in/lukemico/"
 										><span class="icon-linkedin"></span
 									></a>
 								</li>
 								<li>
-									<a href="#"
+									<a href="https://twitter.com/LukeMico"
 										><span class="icon-twitter"></span
 									></a>
 								</li>
@@ -548,30 +721,34 @@
 						<div class="row">
 							<div class="col-12">
 								<div class="widget">
-									<h3>Navigations</h3>
+									<h3>Navigation</h3>
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 col-md-4">
 								<div class="widget">
 									<ul class="links list-unstyled">
-										<li><a href="#">Home</a></li>
-										<li><a href="#">Services</a></li>
-										<li><a href="#">Work</a></li>
+										<li><a href="#home">Home</a></li>
+										<li><a href="#skills">Skills</a></li>
+										<li><a href="#contact">Contact</a></li>
 									</ul>
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 col-md-4">
 								<div class="widget">
 									<ul class="links list-unstyled">
-										<li><a href="#">Press</a></li>
-										<li><a href="#">Blog</a></li>
+										<li><a href="#about">About</a></li>
+										<li>
+											<a href="#blog">Blog</a>
+										</li>
 									</ul>
 								</div>
 							</div>
 							<div class="col-6 col-sm-6 col-md-4">
 								<div class="widget">
 									<ul class="links list-unstyled">
-										<li><a href="#">Contact</a></li>
+										<li>
+											<a href="#portfolio">Portfolio</a>
+										</li>
 									</ul>
 								</div>
 							</div>
